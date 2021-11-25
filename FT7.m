@@ -18,7 +18,7 @@ hold on;
 grid on; 
 plot([-20 20],[0 0],'m-',"linewidth",2,"markersize",8);
 plot([-20 20],[0 0],'m-',"linewidth",2,"markersize",8);
-title(['fx= sin(x) Funcion Suprayectiva']);
+title(['fx= sin(x) Funcion Sobrayectiva']);
 xlabel("Contradominio le corresponde el mismo rango dado")
 disp('La funcion c(v)=sin(v) es Sobrayectiva');
 disp(['Sus elementos pasan por varios puntos de la imagen incluyendo negativos ']);
