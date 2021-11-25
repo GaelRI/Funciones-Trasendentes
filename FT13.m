@@ -1,22 +1,23 @@
 % Octave Script
-% Title         :F. trascendentes: trigonométricas, logarítmicas y exponenciales.
+% Title         :F. trascendentes: trigonomÃ©tricas, logarÃ­tmicas y exponenciales.
 % Description   :Script para funciones algebraicas
-% Author        :Gael Franco García
+% Author        :Gael Franco GarcÃ­a
 % Date          :202123508
 % Version       :1
 % Usage         :octave> /path/F.T.13
-% Notes         :Requiere aplicación octave y usar linea de comandos
+% Notes         :Requiere aplicaciÃ³n octave y usar linea de comandos
 
 clear
 syms x
-% función
+% funciÃ³n
 fx= (7./9)^(2*x+3);
-% plotear función
+% plotear funciÃ³n
 ezplot(fx);
 % plano cartesiano
 hold on;
 grid on; 
 plot([-20 20],[0 0],'m-',"linewidth",2,"markersize",8);
 plot([-20 20],[0 0],'m-',"linewidth",2,"markersize",8);
-title(['fx=(3./7^x) Funcion Suprayectiva']);
-xlabel("Contradominio le corresponde el  mismo rango dado")
+title(['fx=(3./7^x) Funcion Biyectiva']);
+disp('Tiene las caracteristicas de pasar por un solo elemento siento Inyectiva');
+disp('Ademans de que pasa por un cuadrante negativo siendo Sobrayectiva');
