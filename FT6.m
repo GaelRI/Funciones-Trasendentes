@@ -1,22 +1,24 @@
 % Octave Script
-% Title         :F. trascendentes: trigonom閠ricas, logar韙micas y exponenciales.
+% Title         :F. trascendentes: trigonom茅tricas, logar铆tmicas y exponenciales.
 % Description   :Script para funciones algebraicas
-% Author        :Gael Franco Garc韆
+% Author        :Gael Franco Garc铆a
 % Date          :202123508
 % Version       :1
 % Usage         :octave> /path/F.T.6
-% Notes         :Requiere aplicaci髇 octave y usar linea de comandos
+% Notes         :Requiere aplicaci贸n octave y usar linea de comandos
 
 clear
 syms x
-% funci髇
+% funci贸n
 fx= log(x) / log(exp(1)^x);
-% plotear funci髇
+% plotear funci贸n
 ezplot(fx)
 % plano cartesiano
 hold on;
 grid on; 
 plot([-20 20],[0 0],'m-',"linewidth",2,"markersize",8);
 plot([-20 20],[0 0],'m-',"linewidth",2,"markersize",8);
-title(['fx=log e x Funcion Inyectiva']);
-xlabel("Es una funci髇 creciente")
+title(['fx=log e x Funcion Biyectiva']);
+xlabel("Es una funci贸n creciente")
+disp('Tiene las caracteristicas de pasar por un solo elemento siento Inyectiva');
+disp('Ademans de que pasa por un cuadrante negativo siendo Sobrayectiva');
